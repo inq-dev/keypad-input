@@ -19,7 +19,7 @@ import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
  * `--keypad-button-margin` | Button Margin | `5px`
  * `--keypad-button-padding` | Button Padding | `8px`
  * `--keypad-button-border-radius` | Button Border radius | `3px`
- * `--primary-color` | Primary font color for Button | ``
+ * `--primary-color` | Primary font color for Button | `#565361`
  * `--disabled-color` | Disabled font color for Button | `#565361`
  *
  * @customElement
@@ -85,7 +85,7 @@ class KeypadInput extends PolymerElement {
           border: var(--keypad-button-border, 0);
           border-radius: var(--keypad-button-border-radius, 3px);
           padding: var(--keypad-button-padding, 8px);
-          min-width: calc(33.33% - (2 * var(--keypad-button-margin, 5px)));
+          min-width: calc(33.34% - (2 * var(--keypad-button-margin, 5px)));
           outline: none;
           box-sizing: border-box;
           user-select: none;

@@ -1,7 +1,8 @@
 {
-  "name": "keypad-input",
+  "name": "@inq/keypad-input",
   "description": "Keypad input for Touchscreen devices like a Kiosk",
   "main": "keypad-input.js",
+  "version": "0.1.1",
   "dependencies": {
     "@polymer/polymer": "^3.0.0"
   },
@@ -13,5 +14,28 @@
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "wct-mocha": "^1.0.0"
-  }
+  },
+  "license": "SEE LICENSE IN \"LICENSE\"",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inq-dev/keypad-input.git"
+  },
+  "keywords": [
+    "Polymer",
+    "Keypad",
+    "Touchscreen",
+    "Webcomponents",
+    "Polymer3"
+  ],
+  "author": "Damandeep Singh",
+  "bugs": {
+    "url": "https://github.com/inq-dev/keypad-input/issues"
+  },
+  "homepage": "https://github.com/inq-dev/keypad-input#readme"
 }

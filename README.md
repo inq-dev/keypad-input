@@ -1,3 +1,5 @@
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@inq/keypad-input)
+
 # \<keypad-input\>
 
 Keypad input for Touchscreen devices like a Kiosk
@@ -11,3 +13,5 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 ```
 $ polymer serve
 ```
+
+## [DEMO](https://www.webcomponents.org/element/@inq/keypad-input/demo/demo/index.html)
