@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>keypad-input demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+    </script>
+
+    <script type="module" src="../keypad-input.js"></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      div {
+        margin:40px 0;
+      }
+
+      .my-theme {
+        font-size: 1.2em;
+        --keypad-input-color: #a265be;
+        --keypad-input-padding: 14px;
+        --keypad-button-height: 40px;
+        --keypad-button-background: #77c4b6;
+        --keypad-button-margin: 1px;
+        --keypad-button-border-radius: 0;
+        --primary-color: #fff;
+      }
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic keypad-input demo</h3>
+      <demo-snippet>
+        <template>
+          <div>
+            <p>Themed</p>
+            <keypad-input class="my-theme" disable-decimal></keypad-input>
+          </div>
+          <div>
+            <p>Normal</p>
+            <keypad-input></keypad-input>
+          </div>
+
+          <div>
+            <p>Decimal disabled</p>
+            <keypad-input disable-decimal></keypad-input>
+          </div>
+          <div>
+            <p>Decimal disabled & Secret Input</p>
+            <keypad-input disable-decimal secret></keypad-input>
+          </div>
+          <div>
+            <p>Decimal disabled & Hidden Input </p>
+            <keypad-input disable-decimal input-hidden></keypad-input>
+          </div>
+
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
