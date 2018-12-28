@@ -180,7 +180,7 @@ class KeypadInput extends PolymerElement {
   }
   __handleKeyPadClick(e) {
     const totalButtons = new Array(...this.shadowRoot.querySelectorAll(".keypad > .row > button"));
-    const target = e.path[0];
+    const target = e.path ? e.path[0] : e.target;
     if(totalButtons.filter(b => b==target).length) {
       switch(e.target.dataset['action']) {
         case "decimal":
@@ -198,7 +198,7 @@ class KeypadInput extends PolymerElement {
 
   __validateNativeInput(e) {
     if(e.key in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]) {
-      this.__addToValue(e.code.match(/\d+/)[0])
+      this.__addToValue(e.key)
     }
     else if (e.key == ".") {
       if(!this.disableDecimal && this.__value && this.__value.indexOf(".")==-1)
