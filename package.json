@@ -2,7 +2,7 @@
   "name": "@inq/keypad-input",
   "description": "Keypad input for Touchscreen devices like a Kiosk",
   "main": "keypad-input.js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "dependencies": {
     "@polymer/polymer": "^3.0.0"
   },
