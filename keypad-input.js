@@ -206,6 +206,7 @@ class KeypadInput extends PolymerElement {
     }
     else if (e.key == "Backspace") {
       this.__deleteFromValue(1);
+      e.preventDefault() // This is to handle history goBack
     }
     else if (e.key == "Delete") {
       if(e.code == "NumpadDecimal"){
